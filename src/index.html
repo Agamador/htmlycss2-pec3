@@ -7,21 +7,11 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+  <body class="flex flex-col h-screen m-0 p-8 font-sans text-base leading-6">
+    <div class="flex flex-col justify-center items-center h-screen bg-gray-200 rounded-lg mx-auto w-2/5 max-h-[50%]">
+      <a href="./miembros.html" class="text-2xl hover:text-blue-700 mb-3">Miembros</a>
+      <a href="./trainer.html" class="text-2xl hover:text-blue-700">Trainer</a>
     </div>
-    <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

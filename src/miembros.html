@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miembros</title>
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./assets/styles/main.scss">
+    <script src="./assets/scripts/main.js" type="module"></script>
+</head>
+
+<body>
+    <include src="./views/header.html"></include>
+    <div class="flex flex-col items-center justify-center my-5">
+        <h1 class="font-bold text-xl">Miembros del club</h1>
+        <div class="flex flex-wrap items-start justify-center max-w-[90vw]">
+            <include src="views/miembro.html" locals='{"elo": "2022","name":"Magnus Carlsen","img":"assets/images/carlsen.jpg","desc":"To many, GM Magnus Carlsen is the best to ever play the game, although GMs Garry Kasparov and Bobby Fischer remain in the conversation."}'></include>
+            
+            <include src="views/miembro.html" locals='{"elo": "2794","name":"Ian Nepomniachtchi","img":"assets/images/ian.png","desc":"GM Ian Nepomniachtchi (“Nepo” for short) is a Russian super grandmaster who has twice won the Candidates Tournament to play for the world championship."}'></include>
+
+            <include src="views/miembro.html" locals='{"elo": "2785","name":"Alireza Firouzja","img":"assets/images/alireza.png","desc":"Alireza Firouzja is an Iranian-born grandmaster who now plays for France. He is a world championship candidate and two-time Iranian champion."}'></include>
+
+            <include src="views/miembro.html" locals='{"elo": "2775","name":"Hikaru Nakamura","img":"assets/images/hikaru.png","desc":"Hikaru Nakamura was born December 9, 1987 in Hirakata, Japan.Nakamura has been one of the world`s top players for well over a decade..."}'></include>
+
+            <include src="views/miembro.html" locals='{"elo": "2775","name":"Fabiano Caruana","img":"assets/images/fabiano.png","desc":"The prodigy who broke the record held by GM Hikaru Nakamura for America`s youngest chess grandmaster has climbed the mountain of chess and reached the summit."}'></include>
+
+            <include src="views/miembro.html" locals='{"elo": "3000","name":"Sun Tzu","img":"assets/images/suntzu.jpg","desc":"Sun Tzu, el legendario general y estratega chino, habría sido un jugador de ajedrez astuto y preciso."}'></include>
+        </div>
+    </div>
+    <include src="./views/footer.html"></include>
+    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js" type="module"></script>
+    <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>
